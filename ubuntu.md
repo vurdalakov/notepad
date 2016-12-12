@@ -1,4 +1,8 @@
-﻿#### Get Ubuntu version
+﻿# Useful Ubuntu commands
+
+Scope: `Ubuntu 16`+
+
+#### Get Ubuntu version
 
 ```
 lsb_release -a
@@ -105,6 +109,18 @@ touch filename
 
 ```
 sudo chmod +x filename
+```
+
+#### Create directory if not exists
+
+```
+mkdir -p /tmp/logs
+```
+
+#### Run command in background
+
+```
+ls &
 ```
 
 #### Switch to root user
