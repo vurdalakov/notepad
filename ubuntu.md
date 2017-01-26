@@ -150,3 +150,15 @@ sudo apt-get install scsitools
 ```
 sudo rescan-scsi-bus
 ```
+
+#### Enumerate X displays
+
+```
+w -hs | awk '{print $3}' | sort -u
+```
+
+#### Make screenshot from command line
+
+```
+gnome-screenshot --display=:0 --file=screenshot.png
+```
