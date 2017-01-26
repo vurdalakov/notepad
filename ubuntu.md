@@ -134,3 +134,19 @@ sudo su
 ```
 lsusb
 ```
+
+#### Rescan SCSI disks
+
+```
+for i in /sys/class/scsi_host/*; do echo $i; echo "- - -" > sudo $i/scan; done
+```
+
+Or
+
+```
+sudo apt-get install scsitools
+```
+
+```
+sudo rescan-scsi-bus
+```

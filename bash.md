@@ -19,3 +19,9 @@ echo "${OUTPUT}"
 logdir=/tmp/logs
 if [-d "$logdir"]; then rm -rf "$logdir"; fi
 ```
+
+#### Replace space with new line
+
+```
+echo /dev/sd? | tr " " "\n"
+```
