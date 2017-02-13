@@ -162,3 +162,21 @@ w -hs | awk '{print $3}' | sort -u
 ```
 gnome-screenshot --display=:0 --file=screenshot.png
 ```
+
+#### Find process ID
+
+```
+pgrep processName
+```
+
+#### Kill process by ID
+
+```
+kill processID
+```
+
+#### Kill process by name
+
+```
+kill $(pgrep processName)
+```
